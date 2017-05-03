@@ -1,0 +1,26 @@
+questions.txt
+
+Computer Science 50
+Problem Set 3  рекурсивные функции koly vykoryst pryclad
+
+0. 3*3//TODO
+1. //TODO With what sort of data structure is the game’s board represented?
+2. greet ();//TODO
+3. init(); draw(); won(); move();//TODO
+    Почему бинарный поиск требует отсортированного массива?
+    Почему оценка сортировки пузырьком равна O (n2)?
+    Почему оценка сортировки вставками — это Ω (n)?
+    Как работает сортировка выбором? Опишите в трех предложениях (или меньше).
+    Каков верхний предел (наихудший случай) времени работы сортировки слиянием?
+    Дебаггер GDB позволяет отладить программу. А если сформулировать конкретнее, что именно он позволяет делать?
+    
+
+    Besides 4 × 4 (which are Game of Fifteen’s dimensions), what other dimensions does the framework allow?
+
+    With what sort of data structure is the game’s board represented?
+
+    What function is called to greet the player at game’s start?
+
+    What functions do you apparently need to implement?
+
+
