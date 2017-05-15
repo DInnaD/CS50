@@ -98,11 +98,10 @@
 		</div>
               <section class="order">
 		<div class="container">
-			<div class="row">
-				
+			<div class="row">				
 				<div class="col-md-12">
 					<div class="sell_right">
-						<a href="//softgroup.ua" target="_blank" class="logo">Новости разработки сайтов высокого уровня</a>
+						<a href="//softgroup.ua" target="_blank" class="logo">Наши Новости. Разработка сайтов высокого уровня</a>
 			</div>
 				</div>
 			</div>
@@ -126,7 +125,7 @@
 </div>							
 </div>
 </div>						
-
+</div>
 </section>
 <section class="order">
 		<div class="container">

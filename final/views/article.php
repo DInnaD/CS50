@@ -14,18 +14,18 @@
 
                     <div class="article">
 		                <div>
-                    1<span><h3><?=$article['title'] ?></h3></span>
+                    1<span><h3><?=isset($article['title']) ? html($article['title']) : ''?></h3></span>
                     
 
                     
-                    2<span><em><?=$article['category'] ?></em></span>
+                    2<span><em><?=isset($article['category']) ? html($article['category']) : ''?></em></span>
                     
                     0<p></p>
-		    3<p><?=$article['content_tizer']?></p>
+		    3<p><?=isset($article['content_tizer']) ? html($article['content_tizer']) : ''?></p>
                     
-                    4<span><em><?=$article['status']?></em></span>
-                    5<span><em><?=$article['date']?></em></span></div>
-		    6<p><?=$article['content']?></p>	
+                    4<span><em><?=isset($article['status']) ? html($article['status']) : ''?></em></span>
+                    5<span><em><?=isset($article['date']) ? html($article['date']) : ''?></em></span></div>
+		    6<p><?=isset($article['content']) ? html($article['content']) : ''?></p>	
                 </div>
 		    
                     

@@ -34,21 +34,28 @@
 						    <button class="main_mnu_button hidden-md hidden-lg"><i class="fa fa-bars"></i></button>
 
             <ul> 
-            <h3><a href="http://localhost/Blog/final/views/article_admin.php">Добавить статью</a></h3>   
-            <?php foreach($articles as $a): ?>   
+                
+                <h3><a href="../index.php?action=add<?=isset($_GET['action']) ? html($_GET['action']) : ''?>&id=<?=isset($_GET['id'])  ? html($_GET['id']) : ''?>">Добавить статью</a></h3> 
+                
+            <?php if(isset($articles) && $articles !=NULL)           
+            foreach($articles_news as $a) : ?>
+                
                 <div class="article">
                 <div>
-                    1<span><h3><?=$a['title'] ?></h3></span>
-         a<span><em><a href="index.php?action=edit&id=<?=$a['id']?>"><i class="icon-edit"></i></a></em></span>
                     
-                    b<span><em><a href="index.php?action=delete&id=<?=$a['id']?>"><i class="icon-trash"></i></a></em></span>
-                    2<span><em><?=$a['category'] ?></em></span>           
+                    
+                    
+                    1<span><h3><a href="article.php?id=<?=$a['id']?>"><?=isset($a['title']) ? html($a['title']) : ''?></a></h3></span>
+                    a<span><em><a href="index.php?action=edit&id=<?=isset($a['id']) ? html($a['id']) : ''?>"><i class="icon-edit"></i></a></em></span>
+                    
+                    b<span><em><a href="index.php?action=delete&id=<?=isset($a['id']) ? html($a['id']) : ''?>"><i class="icon-trash"></i></a></em></span>
+                    2<span><em><?=isset($a['category']) ? html($a['category']) : ''?></em></span>           
 
-                    3<p><?=$a['content_tizer']?></p>
+                    3<p><?=isset($a['content_tizer']) ? html($a['content_tizer']) : ''?></p>
 
                     
-                    4<span><em><?=$a['status']?></em></span>
-                    5<span><em><?=$a['date']?></em></span>                 
+                    4<span><em><?=isset($a['status']) ? html($a['status']) : ''?></em></span>
+                    5<span><em><?=isset($a['date']) ? html($a['date']) : ''?></em></span>                 
 
                     
                  
@@ -57,12 +64,17 @@
         </div>
 <div class="pages">
 <strong>Pages:</strong>
-<?php for ($i = 1; $i <= $pages; $i++): ?>
-    <?php if ($i == $page): ?><b><?=$i?></b>
-    <?php else: ?><a href="?page=<?=$i?>"><?=$i?></a>
-    <?php endif ?>
+    
+ 
+    
+    
 
-<?php endfor ?>
+    
+        
+    
+    
+    
+
 </div>                
         
 						  </nav>
